@@ -1,0 +1,99 @@
+/*codi inicial interessant en qualsevol pàgina*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: lightgrey;
+	background-image: url('image_background.jpg');
+}
+
+/*FINAL codi inicial interessant en qualsevol pàgina*/
+
+
+/* codi per fer vinyetes amb imatges o gifs animats -millor preparar la grandària de la imatge Versió 1
+ul{
+	list-style-image: url("foto1.gif");
+}
+li {
+	padding-left: 6px;
+}*/
+/* codi per fer vinyetes amb imatges o gifs animats -millor preparar la grandària de la imatge Versió 2
+ul li{
+	background-image: url(foto1.gif);
+	background-repeat: no-repeat;
+	background-size:10%;
+	list-style-type: none;
+	margin-left: 30px;
+	padding-left: 100px;
+	margin-top: 30px;
+}*/
+
+/*Classes interessants per treballar amb contingut que floti a l'esquerra o vulguem centrar*/
+
+div {
+	display: table; /*Pel que el contingut no sobrepasse la capa*/
+	margin: 5px auto;
+	width: 60%;
+	padding: 10px;
+	
+	font-family: Helvetica;
+	font-weight: normal;
+	text-align: center;
+	
+	font-size:1.25em;
+	/*sols per veure l'efecte
+ 	border: 2px solid red;*/  
+}
+
+.row {
+	width:60%; 
+	display: -webkit-flex; display: flex;/*Equilibrar columnes*/
+	margin-left: auto;
+   margin-right: auto;
+   /*sols per veure l'efecte
+   border: 2px solid green;*/
+}
+
+.row:after {
+   clear: both;
+}
+  
+.column {
+	float: left;
+	width: 50%;
+	display: table-cell; /*Equilibrar columnes*/
+	
+	/*sols per veure l'efecte
+	border: 2px solid yellow;
+	*/
+}
+.column img{
+	width: 100%;
+	
+   /*sols per veure l'efecte
+    border: 2px solid red;
+   */  
+}
+
+.center { /*alinear la capa al centre horitzontalment*/
+	margin: auto;
+	position: relative;
+	text-align: center;
+}
+.center img{ /*alinear la imatge al centre horitzontalment*/
+	margin: 2px;
+	vertical-align: middle;
+	/*Segons les imatges a visualitzar*/
+	width: 100px;
+}
+
+.image_align_vertical{ /*alinear la imatge al centre verticalment*/
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+
+/*FINAL Classes interessants per treballar amb contingut que floti a l'esquerra o vulguem centrar*/

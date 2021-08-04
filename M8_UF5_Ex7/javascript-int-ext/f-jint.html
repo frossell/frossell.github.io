@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validarForm() {
+    var x = document.forms["primerform"]["nom"].value;
+    if (x == "") {
+        alert("Completa el teu nom");
+        return false;
+    }else {
+    	 alert("El teu nom es ... "+x);
+    	 document.getElementById("primerform").submit();
+    	 return false;
+	}
+}
+</script>
+</head>
+
+<body>
+
+
+<form name="primerform" action="mailto:frossell@xtec.cat" onsubmit="return validarForm()" method="post">
+
+Nom:<input type="text" name="nom" value="Indica el teu nom" size="50" maxlength="250">
+<input type="submit" name="enviar" value="Enviar" size="50">
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+table,th,td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin: 50px auto;
+	padding: 5px;
+	background-color: #FFC300;
+}
+th {
+	font-size: xx-large;
+}
+td {
+	width: 22%;
+
+}
+.subtitol {
+	text-align: center;
+	font-size: x-large;
+}
+td.imatges {
+	text-align: center;
+}

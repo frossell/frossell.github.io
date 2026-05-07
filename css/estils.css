@@ -1,0 +1,138 @@
+/* https://coolors.co/image-picker
+CSS HEX 
+--lapis-lazuli: #0B6191ff;
+--picton-blue: #47A7D2ff;
+--non-photo-blue: #AAE5FAff;
+--pale-azure: #82D4F5ff;
+--prussian-blue: #012538ff;*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #012538;
+  background-image: url(background.jpg);
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  color: whitesmoke;
+  height: 40vh;
+}
+header h2 {
+  margin-top: 10vh;
+  font-size: 10vh;
+  text-shadow: 3px 3px #0B6191;
+}
+header h4 {
+  margin-top: 1vh;
+  font-size: 5vh;
+  text-shadow: 2px 2px #0B6191;
+  float: right;
+}
+header h4 a {
+  color: #AAE5FA;
+}
+
+/* Navigation */
+nav {
+  background: #82D4F5;
+  padding: 0.5vw;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #0B6191;
+  border: 1px solid #012538;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  text-align: center;
+  border: 1px solid #012538;
+  width: 20%;
+}
+nav ul li a {
+  display: block;
+  color: #AAE5FA;
+  padding: 1vw 2vh;
+  text-decoration: none;
+  font-size: min(2vw, 9vw);
+}
+nav ul li.active {
+  background-color: #47A7D2;
+  color: white;
+}
+nav ul li:hover:not(.active) {
+  background-color: #012538;
+  color: white;
+}
+
+/* Article section */
+article {
+  padding: 20px;
+  background-color: #AAE5FA;
+  display: table;
+  width: 100%;
+}
+article h2 {
+  margin: 3vh;
+}
+article img {
+  width: 100%;
+}
+
+.fila {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.columna {
+  flex:1;
+  padding: 2vw;
+}
+
+/* Footer */
+footer {
+  background-color:  #012538ff;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  height: 7vw;
+}
+
+fieldset {
+  margin-top: 10px;
+  box-shadow: 3px 5px 4px 5px #012538;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header {
+    padding: 0.2vw;
+    text-align: center;
+    height: 20vh;
+  }
+
+  header h2 {
+    margin-top: 2vh;
+    font-size: 7vh;
+    text-shadow: 2px 2px #012538;
+  }
+
+  header h4 {
+    margin-top: 0.5vh;
+    font-size: 4vh;
+    text-shadow: 1px 1px #012538;
+  }
+  .columna {
+  width: 100%;
+  
+  }
+}

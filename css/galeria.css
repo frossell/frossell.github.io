@@ -1,0 +1,40 @@
+header,
+footer {
+	background-color: #900C3F;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	width: 100%;
+}
+div.container {
+	width: 90%;
+	margin: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 1;/* Fa que el container ocupi l'espai restant i empenyi el footer cap avall */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+div.gallery {
+	border: 1px solid #ccc;
+	width: 24%;
+}
+div.gallery:hover {
+	border: 2px solid yellowgreen;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+@media screen and (max-width: 600px) {
+	div.gallery {
+		width: 48%;
+		margin: 0;
+	}
+}	

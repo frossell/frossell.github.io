@@ -1,12 +1,4 @@
-header,
-footer {
-	background-color: #900C3F;
-	color: white;
-	text-align: center;
-	padding: 10px;
-	margin: auto;
-	width: 100%;
-}
+
 div.container {
 	width: 90%;
 	margin: 1%;
